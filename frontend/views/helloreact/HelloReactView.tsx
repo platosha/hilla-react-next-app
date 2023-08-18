@@ -14,7 +14,7 @@ const comboBoxItems = ['foo', 'bar'];
 export default function FormView() {
   const [ name, setName ] = useState('');
 
-  const { binder: { model, submit }, field: originalField } = useBinder(EntityModel, { onSubmit: FormEndpoint.sendEntity });
+  const { model, submit, field: originalField } = useBinder(EntityModel, { onSubmit: FormEndpoint.sendEntity });
   const field = originalField as <M extends AbstractModel<any>>(model: M) => FieldDirectiveResult;
 
   return (
