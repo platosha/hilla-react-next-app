@@ -12,9 +12,11 @@ import { AbstractModel } from '@hilla/form';
 const comboBoxItems = ['foo', 'bar'];
 
 export default function FormView() {
-  const [ name, setName ] = useState('');
-
-  const { model, submit, field: originalField } = useBinder(EntityModel, { onSubmit: FormEndpoint.sendEntity });
+  const { model, submit, field: originalField } = useBinder(EntityModel, {
+    onSubmit: async (e) => {
+      await FormEndpoint.sendEntity(e);
+    }
+  });
   const field = originalField as <M extends AbstractModel<any>>(model: M) => FieldDirectiveResult;
 
   return (
