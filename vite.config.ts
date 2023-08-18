@@ -10,6 +10,12 @@ const customConfig: UserConfigFn = (env) => ({
       include: '**/*.tsx',
     }),
   ],
+  optimizeDeps: {
+    exclude: [
+      '@hilla/form',
+      '@hilla/react-form',
+    ],
+  },
 });
 
 export default overrideVaadinConfig(customConfig);
