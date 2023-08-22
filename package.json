@@ -39,6 +39,8 @@
     "@lit-labs/react": "^1.1.0",
     "@rollup/plugin-replace": "5.0.2",
     "@rollup/pluginutils": "5.0.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "@types/validator": "^13.11.1",
@@ -132,6 +134,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "f0f6ca39776f8f0fe12fa165d6b927228feccbf4ea7ac0a43b7e187ae2ebe662"
+    "hash": "f800766d95594519c440d665bb08922b7e5c59153a1249c190d921a40d58add0"
   }
 }
