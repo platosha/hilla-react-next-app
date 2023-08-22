@@ -14,6 +14,16 @@ import jakarta.validation.constraints.NotNull;
 @AnonymousAllowed
 public class FormEndpoint {
 
+    @Nonnull
+    public Entity getEntity() {
+        var entity = new Entity();
+        entity.date = LocalDate.of(2023, 8, 20);
+        entity.name = "Jane Doe";
+        entity.choice = "foo";
+        entity.number = 1;
+        return entity;
+    }
+
     public Entity sendEntity(@Nonnull Entity entity) {
         return entity;
     }
