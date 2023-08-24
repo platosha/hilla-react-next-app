@@ -20,6 +20,7 @@ const customConfig: UserConfigFn = (env) => ({
   resolve: {
     alias: {
       '@hilla/form': resolve('./frontend/hilla/packages/ts/form/src/index.ts'),
+      '@hilla/frontend': resolve('./hilla/packages/ts/hilla-frontend'),
       '@hilla/react-form': resolve('./frontend/hilla/packages/ts/react-form/src/index.ts'),
     },
   },

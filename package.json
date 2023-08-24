@@ -4,7 +4,7 @@
   "type": "module",
   "dependencies": {
     "@hilla/form": "./frontend/hilla/packages/ts/form",
-    "@hilla/frontend": "2.2.0-alpha7",
+    "@hilla/frontend": "./hilla/packages/ts/hilla-frontend",
     "@hilla/generator-typescript-cli": "2.2.0-alpha7",
     "@hilla/generator-typescript-core": "2.2.0-alpha7",
     "@hilla/generator-typescript-plugin-backbone": "2.2.0-alpha7",

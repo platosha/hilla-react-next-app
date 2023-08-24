@@ -28,6 +28,10 @@ public class FormEndpoint {
         return entity;
     }
 
+    public void savePerson(@Nonnull Person person) {
+        // nop
+    }
+
     static public class Entity {
         @Nullable
         public LocalDate date;
