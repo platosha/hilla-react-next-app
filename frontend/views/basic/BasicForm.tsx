@@ -16,7 +16,6 @@ export function BasicForm() {
   const dateOfBirth = field(binder.model.dateOfBirth);
   const subscribe = field(binder.model.subscribe);
 
-  console.log("render", binder.value.subscribe);
   return (
     <>
       <section className="flex p-m gap-m items-end">
